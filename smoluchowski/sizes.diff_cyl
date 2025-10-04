@@ -1,0 +1,13 @@
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c     SIZES for program cyl_diff
+c
+c     JM, Ljubljana, March 2022
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      Integer MaxBin,max
+      Parameter(MaxBin=10000) !maximum number of bins in x-direction 
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c
+c     The rest are derived quantities, leave them intact
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      Parameter(max = 6*MaxBin +150) !see FFT1D
+
