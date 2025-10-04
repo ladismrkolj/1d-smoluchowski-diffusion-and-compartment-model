@@ -1,0 +1,14 @@
+0.   1360000.    10000.0          ! a,b,dx  ; b for Ranvier must be 2560; for Schwann 9760   
+30000000           1000         ! Nstlim,dt ! in ns
+.true.                     ! Dirichlet BC on the right
+.false.                     ! Fourier if .true. then first and second derivatives are calculated by FFT
+.false.                    ! Boltzmann, if .true. then initial profile corresponds to Boltzmann distribution
+.false.                    ! Lego_c, if .true. then initial profile is read from file 'INITIAL_C'
+.false., 1.0d0             ! Axo_full,c0. if true then axoplams is filled with the conc. c0, the rest is empty
+1.0d0                      ! g0 concentration on the right boundary
+10000                         ! Ndruck     
+0                         ! Nsmooth ! how many times is performed smmoting cycle for pmf and generated concentration
+82d0                     ! diffusion coefficient A^2/ns; 74.9d0 for lidocaine and 67.1d0  for bupivacaine
+100000. 1350000. 0.38 3.29  0.0   !radius of the membrane start, membrane end, and the corresponding pmfs
+.false.                    ! Schwann; if true then pmf for the Schwann cell is generated, note that pmf in water part equals to the ECF
+40  55. 125.               ! data for Schwann cell:  N_wraps, water_slab, a_membrane_slab
