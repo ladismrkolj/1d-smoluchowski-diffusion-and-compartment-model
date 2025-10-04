@@ -1,0 +1,11 @@
+ 0.0d0          ! zeit
+ 10000           ! npoi
+ 5.0d-6          ! dt
+ 100            ! ndruck
+ .true.         ! only emptying
+ .true., 58.53         !washout, if .true. simulate washout. washout akw(1), later will be akw(i),i=1,n_ak)
+ .false., 1.0d-5, 1.0d0, 1.0d0     !exponential bolus, if true container 1 is connected to extraneural bolus of LA, bkw(1), blevel, Tau
+ 0.0d0, 0.0d0, 0.0d0    ! (Alevel(i),i=1,n_ode) in mmol/yL
+ 2.979d-6, 4.173d-6, 2.948d-7    ! (Avolume(i),i=1,n_ode) in yL
+ 3.009d-5, 1.279d-3, 1.283d-3, 2.657d-3, 4.370d-5, 9.985d-4     !  (Ak(i),i=1,n_ak) in yL/s
+   
