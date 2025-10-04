@@ -1,0 +1,12 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c     Sizes for the program Ode : solves a system of
+c     ordinary differential equations
+c
+c     JM, DP, Ljubljana, February 2018
+
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      integer NMAX
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c     NMAX = maximum number of ODE
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+      parameter (NMAX=20)
